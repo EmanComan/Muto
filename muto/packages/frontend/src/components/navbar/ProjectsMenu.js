@@ -1,8 +1,8 @@
 export const ProjectsMenu = () => {
   return (
-    <li class="nav-item  dropdown d-none d-md-block">
+    <li className="nav-item  dropdown d-none d-md-block">
       <a
-        class="nav-link dropdown-toggle"
+        className="nav-link dropdown-toggle"
         id="projectDropdown"
         href="#/"
         data-toggle="dropdown"
@@ -12,15 +12,15 @@ export const ProjectsMenu = () => {
         Projects{" "}
       </a>
       <div
-        class="dropdown-menu navbar-dropdown"
+        className="dropdown-menu navbar-dropdown"
         aria-labelledby="projectDropdown"
       >
-        <a class="dropdown-item" href="#/">
-          <i class="mdi mdi-eye-outline mr-2"></i>View Project{" "}
+        <a className="dropdown-item" href="#/">
+          <i className="mdi mdi-eye-outline mr-2"></i>View Project{" "}
         </a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#/">
-          <i class="mdi mdi-pencil-outline mr-2"></i>Edit Project{" "}
+        <div className="dropdown-divider"></div>
+        <a className="dropdown-item" href="#/">
+          <i className="mdi mdi-pencil-outline mr-2"></i>Edit Project{" "}
         </a>
       </div>
     </li>

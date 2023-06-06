@@ -1,14 +1,9 @@
-import './assets/styles/css/style.css'
-import './assets/mdi/css/materialdesignicons.min.css'
-import { Sidebar } from './components/sidebar/Sidebar';
-import { Navbar } from './components/navbar/Navbar';
+import "./assets/styles/css/style.css";
+import "./assets/mdi/css/materialdesignicons.min.css";
+import Router from "./routes";
+
 function App() {
-  return (
-    <>
-  <Navbar/>
-  <Sidebar/>
-    </>
-  );
+  return (<Router />);
 }
 
 export default App;

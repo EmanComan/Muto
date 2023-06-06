@@ -1,0 +1,23 @@
+
+.datatable .rdt_TableHead {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+  }
+  .datatable .rdt_TableBody {
+    background-color: inherit;
+    padding: 10px;
+  }
+
+  .datatable .rdt_TableRow {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .datatable .rdt_Pagination {
+    margin-top: 15px;
+  }
+
+  /* .datatable .rdt_selected {
+    /* background-color: #e0e0e0; */
+  /* }  */

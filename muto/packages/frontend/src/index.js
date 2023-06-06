@@ -1,12 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from './App';
+import {AuthProvider, AuthConsumer} from "./context/jwt-context";
+import Loader from './components/loader';
 import reportWebVitals from './reportWebVitals';
-
+ 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <AuthProvider>
+      <AuthConsumer>
+        {(auth) => !auth.isInitialized ?  (
+          <Loader/>
+        ): (
+          <Routes>
+            <Route path='/*' element={<App/>}/>
+          </Routes>
+        )}
+      </AuthConsumer>
+    </AuthProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
