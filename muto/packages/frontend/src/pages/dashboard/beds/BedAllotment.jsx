@@ -1,8 +1,9 @@
 import React from "react";
-import { AddOperations } from "../../../components/operations/AddOperations";
-import { MyOperations } from "../../../components/operations/MyOperations";
+import { AddBed } from "../../../components/Beds/AddBeds";
+import { MyBeds } from "../../../components/Beds/MyBeds";
 
-export default function Operations() {
+
+export default function BedAllotment() {
   return (
     <div className="col-md-12 grid-margin stretch-card">
       <div className="card">
@@ -18,7 +19,7 @@ export default function Operations() {
                       href="#overview"
                       role="tab"
                     >
-                      Operations
+                      Bed Allotments
                     </a>
                   </li>
                   <li className="nav-item">
@@ -28,14 +29,14 @@ export default function Operations() {
                       href="#academics"
                       role="tab"
                     >
-                      Add Operation
+                      Add Bed Allotment
                     </a>
                   </li>
                 </ul>
               </div>
               <div className="tab-content tab-transparent-content">
-                <AddOperations/>
-                <MyOperations/>
+                <AddBed/>
+                <MyBeds/>
               </div>
             </div>
           </div>

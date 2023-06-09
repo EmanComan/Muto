@@ -1,8 +1,10 @@
 import React from "react";
-import { AddOperations } from "../../../components/operations/AddOperations";
-import { MyOperations } from "../../../components/operations/MyOperations";
+import { MyPrescriptions } from "../../../components/prescriptions/MyPrescriptions";
+import { AddPrescriptions } from "../../../components/prescriptions/AddPrescriptions";
 
-export default function Operations() {
+
+
+export default function Prescriptions(){
   return (
     <div className="col-md-12 grid-margin stretch-card">
       <div className="card">
@@ -18,7 +20,7 @@ export default function Operations() {
                       href="#overview"
                       role="tab"
                     >
-                      Operations
+                      Prescriptions
                     </a>
                   </li>
                   <li className="nav-item">
@@ -28,14 +30,14 @@ export default function Operations() {
                       href="#academics"
                       role="tab"
                     >
-                      Add Operation
+                      Add Prescription
                     </a>
-                  </li>
+                  </li>                  
                 </ul>
               </div>
               <div className="tab-content tab-transparent-content">
-                <AddOperations/>
-                <MyOperations/>
+              <MyPrescriptions/>
+              <AddPrescriptions/>
               </div>
             </div>
           </div>
@@ -43,4 +45,4 @@ export default function Operations() {
       </div>
     </div>
   );
-}
+};

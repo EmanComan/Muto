@@ -1,8 +1,8 @@
 import React from "react";
-import { AddOperations } from "../../../components/operations/AddOperations";
-import { MyOperations } from "../../../components/operations/MyOperations";
+import { MySigns } from "../../../components/signs/MySigns";
+import { AddSign } from "../../../components/signs/AddSigns";
 
-export default function Operations() {
+export default function Signs() {
   return (
     <div className="col-md-12 grid-margin stretch-card">
       <div className="card">
@@ -18,7 +18,7 @@ export default function Operations() {
                       href="#overview"
                       role="tab"
                     >
-                      Operations
+                      Vital Signs
                     </a>
                   </li>
                   <li className="nav-item">
@@ -28,14 +28,14 @@ export default function Operations() {
                       href="#academics"
                       role="tab"
                     >
-                      Add Operation
+                      Add sign
                     </a>
                   </li>
                 </ul>
               </div>
               <div className="tab-content tab-transparent-content">
-                <AddOperations/>
-                <MyOperations/>
+                <MySigns />
+                <AddSign/>
               </div>
             </div>
           </div>

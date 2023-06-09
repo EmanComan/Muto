@@ -5,62 +5,134 @@ export default function Dashboard() {
   return (
     <>
       <h3 className="text-primary">ADMIN</h3>
-<br/>
+      <br />
       <div className="row">
         <div className="col">
-        <a href="/doctors">
-          <div class="card text-bg-success mb-3" style={{ maxWidth: "18rem" }}>
-            
-            <div class="card-body">
+          <a className="card-link border-circle" href="/doctors">
+            <div
+              className="card cardly text-dark bg-success mb-3"
+              style={{ maxWidth: "18rem" }}
+            >
+              <div className="card-body">
+              <span className="icon-lg">
+                  <i className="mdi mdi-hospital-building menu-icon"></i>
+                </span>
+              <p className="card-text">DOCTORS</p>
+              </div>
               
-              <p class="card-text">
-                DOCTORS
-              </p>
             </div>
-          </div>
-        </a>
+          </a>
         </div>
         <div className="col">
-        <a href="#/">
-          <div class="card text-bg-success mb-3" style={{ maxWidth: "18rem" }}>
-            
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+          <a className="card-link" href="/nurses">
+            <div
+              className="card cardly text-dark bg-info mb-3"
+              style={{ maxWidth: "18rem" }}
+            >
+              <div className="card-body">
+              <span className="icon-lg">
+                  <i className="mdi mdi-hospital-building menu-icon"></i>
+                </span>
+                <p className="card-text">NURSES</p>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
         </div>
         <div className="col">
-        <a href="#/">
-          <div class="card text-bg-success mb-3" style={{ maxWidth: "18rem" }}>
-            
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+          <a className="card-link" href="/patients">
+            <div
+              className="card cardly text-dark bg-primary mb-3"
+              style={{ maxWidth: "18rem" }}
+            >
+              <div className="card-body">
+              <span className="icon-lg">
+                  <i className="mdi mdi-hospital-building menu-icon"></i>
+                </span>
+                <p className="card-text">PATIENTS</p>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
         </div>
         <div className="col">
-        <a href="#/">
-          <div class="card text-bg-success mb-3" style={{ maxWidth: "18rem" }}>
-            
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+          <a className="card-link" href="/departments">
+            <div
+              className="card cardly text-dark bg-warning mb-3"
+              style={{ maxWidth: "18rem" }}
+            >
+              <div className="card-body">
+              <span className="icon-lg">
+                  <i className="mdi mdi-hospital-building menu-icon"></i>
+                </span>
+                <p className="card-text">DEPARTMENTS</p>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
         </div>
       </div>
-
+      <div className="row">
+        <div className="col">
+          <a className="card-link" href="/pharmacists">
+            <div
+              className="card cardly text-dark bg-warning mb-3"
+              style={{ maxWidth: "18rem" }}
+            >
+              <div className="card-body">
+              <span className="icon-lg">
+                  <i className="mdi mdi-hospital-building menu-icon"></i>
+                </span>
+                <p className="card-text">PHARMACISTS</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div className="col">
+          <a className="card-link" href="/labouratorists">
+            <div
+              className="card cardly text-dark bg-primary mb-3"
+              style={{ maxWidth: "18rem" }}
+            >
+              <div className="card-body">
+              <span className="icon-lg">
+                  <i className="mdi mdi-hospital-building menu-icon"></i>
+                </span>
+                <p className="card-text">LABOURATORISTS</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div className="col">
+          <a className="card-link" href="/accountants">
+            <div
+              className="card cardly text-dark bg-info mb-3"
+              style={{ maxWidth: "18rem" }}
+            >
+              <div className="card-body">
+              <span className="icon-lg">
+                  <i className="mdi mdi-hospital-building menu-icon"></i>
+                </span>
+                <p className="card-text">ACCOUNTANTS</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div className="col">
+          <a className="card-link" href="/receptionists">
+            <div
+              className="card cardly text-dark bg-success mb-3"
+              style={{ maxWidth: "18rem" }}
+            >
+              <div className="card-body">
+              <span className="icon-lg">
+                  <i className="mdi mdi-hospital-building menu-icon"></i>
+                </span>
+                <p className="card-text">RECEPTIONISTS</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+    <hr className="myline"/>
       <div>
         <ReactCalendar />
       </div>

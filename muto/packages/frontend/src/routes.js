@@ -21,6 +21,14 @@ import Accountants from "./pages/dashboard/accountants/Accountants";
 import Receptionists from "./pages/dashboard/receptionists/Receptionists";
 import Operations from "./pages/dashboard/operations/Operations";
 import DoctorDashboard from "./pages/dashboard/doctors/Doctordashboard";
+import { MyQueue } from "./components/Queuee/MyQueue";
+import Prescriptions from "./pages/dashboard/prescriptions/Prescriptions";
+import { MySigns } from "./components/signs/MySigns";
+import Appointments from "./pages/dashboard/appointments/Appointments";
+import BedAllotment from "./pages/dashboard/beds/BedAllotment";
+import Donors from "./pages/dashboard/blood-donation/Donors";
+import DispatchedBlood from "./pages/dashboard/dispatchedblood/DispatchedBlood";
+import { BloodBank } from "./components/bloodBank";
 
 const Router = () => {
   const { user } = useAuth();
@@ -36,6 +44,46 @@ const Router = () => {
     {
       path: "/",
       element: <DoctorDashboard/>,
+    },
+    {
+      path: "/patients",
+      element: <Patients/>,
+    },
+    {
+      path: "/queue",
+      element: <MyQueue/>,
+    },
+    {
+      path: "/prescriptions",
+      element: <Prescriptions/>,
+    },
+    {
+      path: "/vital-sign",
+      element: <MySigns/>,
+    },
+    {
+      path: "/appointments",
+      element: <Appointments/>,
+    },
+    {
+      path: "/bed-allotment",
+      element: <BedAllotment/>,
+    },
+    {
+      path: "/donor",
+      element: <Donors/>,
+    },
+    {
+      path: "/dispatchedblood",
+      element: <DispatchedBlood/>,
+    },
+    {
+      path: "/bloodbank",
+      element: <BloodBank/>,
+    },
+    {
+      path: "/operation",
+      element: <Operations/>,
     },
   ];
 

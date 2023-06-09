@@ -5375,6 +5375,18 @@ input[type="button"].btn-block {
     pointer-events: none;
     cursor: default; }
 
+
+
+.card-link:hover {
+  text-decoration: none;
+  color:rgba(0, 0, 0, 0.9);
+} 
+
+.myline {
+  border-color: #008000;
+  box-shadow: #16181b ;
+}
+
 .nav-tabs {
   border-bottom: 1px solid #e3e5ef; }
   .nav-tabs .nav-item {
@@ -14354,7 +14366,25 @@ border-left: 6px solid white;
 
 }
 
-.icon-bg:hover{
-  color: white;
+
+.cardly {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 2px 16px;
+  border-style: solid;
+  border-radius: 25px;
+  border-bottom-width: 9px;
+  border-bottom-color:#44ce42;
+}
+
+/* On mouse-over, add a deeper shadow */
+.cardly:hover {
+  box-shadow: 0 8px 36px 0 rgba(0,0,0,1.5);
+}
+
+.otherPage {
+  
+  text-decoration: none;
 }
 

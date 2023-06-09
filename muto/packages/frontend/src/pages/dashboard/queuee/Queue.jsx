@@ -1,8 +1,9 @@
 import React from "react";
-import { AddOperations } from "../../../components/operations/AddOperations";
-import { MyOperations } from "../../../components/operations/MyOperations";
+import { AddQueue } from "../../../components/Queuee/AddQueue";
+import { MyQueue } from "../../../components/Queuee/MyQueue";
 
-export default function Operations() {
+
+export default function Queue(){
   return (
     <div className="col-md-12 grid-margin stretch-card">
       <div className="card">
@@ -18,7 +19,7 @@ export default function Operations() {
                       href="#overview"
                       role="tab"
                     >
-                      Operations
+                      Queue
                     </a>
                   </li>
                   <li className="nav-item">
@@ -28,14 +29,14 @@ export default function Operations() {
                       href="#academics"
                       role="tab"
                     >
-                      Add Operation
+                      Add Queue
                     </a>
-                  </li>
+                  </li>                  
                 </ul>
               </div>
               <div className="tab-content tab-transparent-content">
-                <AddOperations/>
-                <MyOperations/>
+              <AddQueue/>
+              <MyQueue/>
               </div>
             </div>
           </div>
@@ -43,4 +44,4 @@ export default function Operations() {
       </div>
     </div>
   );
-}
+};

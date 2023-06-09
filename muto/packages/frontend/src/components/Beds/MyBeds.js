@@ -1,12 +1,12 @@
-import { OperationsTable } from "./OperationsTable"
+import { BedsTable } from "./BedsTable"
 
-export const MyOperations = () =>{
+export const MyBeds = () =>{
     return (
         <div className="tab-pane fade show active" id="overview" role="tabpanel">
         <div className="pd-20">
           <div className="card">
             <div className="container grid-margin">
-              <OperationsTable/>
+            <BedsTable/>
             </div>
           </div>
         </div>
